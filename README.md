@@ -1,6 +1,6 @@
-# Linker-Mutation
+# ML + LLM for Electrochemical Reactions 
 
-<img src=".images/project.png" width="20%" height="20%">
+<img src="image/project.png" width="40%" height="40%">
 
 ## Summary of different linker mutation methods
 
