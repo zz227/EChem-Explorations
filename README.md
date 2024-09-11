@@ -1,6 +1,6 @@
 # Linker-Mutation
 
-<img src="./images/project.png" width="20%" height="20%">
+<img src=".images/project.png" width="20%" height="20%">
 
 ## Summary of different linker mutation methods
 
