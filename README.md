@@ -2,7 +2,6 @@
 
 <img src="image/project.png" width="40%" height="40%">
 
-# EChem-Explorations: Integrating Machine Learning and LLMs for Electrochemical C-H Oxidation Reaction Analysis
 
 This repository contains code and datasets associated with the research preprint **[Integrating Machine Learning and Large Language Models to Advance Exploration of Electrochemical Reactions](https://chemrxiv.org/engage/chemrxiv/article-details/66cf7e1120ac769e5f241caf)**. This project demonstrates the synergistic potential of machine learning (ML) and large language models (LLMs) for the exploration, prediction, and optimization of electrochemical C-H oxidation reactions.
 
