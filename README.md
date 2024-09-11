@@ -105,7 +105,10 @@ We extend our gratitude to the Machine Learning for Pharmaceutical Discovery and
 ## References
 For this work:
 
-10.26434/chemrxiv-2024-pk105-v2 D O I: 10.26434/chemrxiv-2024-pk105-v2 [opens in a new tab]
+> ChemRxiv <br/>
+> Integrating Machine Learning and Large Language Models to Advance Exploration of Electrochemical Reactions <br/>
+> [https://arxiv.org/abs/2303.08774](https://doi.org/10.26434/chemrxiv-2024-pk105-v2) <br/>
+
 
 
 
