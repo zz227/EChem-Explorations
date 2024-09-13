@@ -54,7 +54,7 @@ Below is a summary of three representative tasks:
 - **Task 2: Bayesian Optimization** – Focused on using skopt for suggesting optimal synthesis conditions using Bayesian optimization.
   - Models such as **GPT-4o** and **O1-preview** excelled with high correctness and accuracy after reflection.
 
-- **Task 3: EDBO Optimization** – Involved reading synthesis condition documentation and applying the EDBO Python package for optimization. (https://github.com/doyle-lab-ucla/edboplus)
+- **Task 3: EDBO Optimization** – Involved reading documentation and applying the EDBO Python package for synthesis optimization. (https://github.com/doyle-lab-ucla/edboplus)
   - Models like **Claude-3.5-sonnet** and **GPT-4o** demonstrated over **98%** correctness and accuracy, efficiently utilizing the EDBO package for optimization tasks.
 
 ### Task 1: Generating Code for Reactivity Prediction
