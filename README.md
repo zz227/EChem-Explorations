@@ -156,9 +156,6 @@ The results from running the LLM-guided code generation and the subsequent execu
 
 
 
-## License 
-
-The input prompt generation script is distributed under the MIT open source license (see [`LICENSE.txt`](LICENSE.txt))
 
 
 ## Contributing
