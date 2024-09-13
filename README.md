@@ -57,7 +57,7 @@ Below is a summary of three representative tasks:
 - **Task 3: EDBO Optimization** – Involved reading synthesis condition documentation and applying the EDBO Python package for optimization. (https://github.com/doyle-lab-ucla/edboplus)
   - Models like **Claude-3.5-sonnet** and **GPT-4o** demonstrated over **98%** correctness and accuracy, efficiently utilizing the EDBO package for optimization tasks.
 
-### Task 1: Reactivity Prediction
+### Task 1: Generating Code for Reactivity Prediction
 
 | **Model Name**       | **Avg Time (sec)** | **Code Length** | **Code Correctness** | **Correctness (with Reflection)** | **Code Accuracy** | **ML Model Performance** |
 |----------------------|--------------------|-----------------|----------------------|----------------------------------|-------------------|--------------------------|
@@ -74,7 +74,7 @@ Below is a summary of three representative tasks:
 | o1-mini              | 25                 | 249             | 94%                  | 100%                             | 100%              | 96%                      |
 | o1-preview           | 37                 | 244             | 91%                  | 100%                             | 100%              | 96%                      |
 
-### Task 2: Bayesian Optimization
+### Task 2: Synthesis Condition Suggestion via Bayesian Optimization
 
 | **Model Name**       | **Avg Time (sec)** | **Code Length** | **Code Correctness** | **Correctness (with Reflection)** | **Code Accuracy** |
 |----------------------|--------------------|-----------------|----------------------|----------------------------------|-------------------|
@@ -91,7 +91,7 @@ Below is a summary of three representative tasks:
 | o1-mini              | 23                 | 764             | 35%                  | 75%                              | 74%               |
 | o1-preview           | 66                 | 661             | 50%                  | 90%                              | 85%               |
 
-### Task 3: EDBO Optimization
+### Task 3: Reading and Using EDBO Optimization
 
 | **Model Name**       | **Avg Time (sec)** | **Code Length** | **Code Correctness** | **Correctness (with Reflection)** | **Code Accuracy** |
 |----------------------|--------------------|-----------------|----------------------|----------------------------------|-------------------|
@@ -109,7 +109,7 @@ Below is a summary of three representative tasks:
 | o1-preview           | 36                 | 285             | 91%                  | 100%                             | 99%               |
 
 
-
+*Note: Code correctness refers to the percentage of code that executes without errors after 100 trials. Code accuracy is the successful execution of code that achieves the intended result, such as generating a model with over 85% accuracy. Higher correctness and accuracy often indicate fewer hallucinations. Reflection, with up to two corrections, is applied to improve code. Average time measures the total response time for generating the code, including comments.*
 
 ## Requirements
 
