@@ -42,6 +42,75 @@ This folder contains the final datasets and results generated during this study.
 - **SF3. Auto Coding Dataset.xlsx**: Dataset generated from LLM-guided code generation.
 - **SF4. EChem Reaction Optimization Dataset.xlsx**: Results from the reaction optimization process.
 
+
+## Evaluation Summary
+
+In this study, 12 large language models (LLMs) were tasked with chemistry-related tasks. Each model was repeated for 100 times. All generated code and their evaluations can be found in **SF3. Auto Coding Dataset.xlsx**.
+Below is a summary of three representative tasks:
+
+- **Task 1: Reactivity Prediction** – Implemented ML models for predicting chemical reactivity with sklearn.
+  - Top models like **Claude-3.5-sonnet**, **Claude-3-opus**, and **GPT-4o** achieved high code correctness and accuracy, with over **96%** ML model performance.
+  
+- **Task 2: Bayesian Optimization** – Focused on using skopt for suggesting optimal synthesis conditions using Bayesian optimization.
+  - Models such as **GPT-4o** and **O1-preview** excelled with high correctness and accuracy after reflection.
+
+- **Task 3: EDBO Optimization** – Involved reading synthesis condition documentation and applying the EDBO Python package for optimization. (https://github.com/doyle-lab-ucla/edboplus)
+  - Models like **Claude-3.5-sonnet** and **GPT-4o** demonstrated over **98%** correctness and accuracy, efficiently utilizing the EDBO package for optimization tasks.
+
+### Task 1: Reactivity Prediction
+
+| **Model Name**       | **Avg Time (sec)** | **Code Length** | **Code Correctness** | **Correctness (with Reflection)** | **Code Accuracy** | **ML Model Performance** |
+|----------------------|--------------------|-----------------|----------------------|----------------------------------|-------------------|--------------------------|
+| llama-3              | 24                 | 218             | 54%                  | 76%                              | 72%               | 96%                      |
+| llama-3.1            | 25                 | 224             | 52%                  | 89%                              | 80%               | 92%                      |
+| claude-3-sonnet      | 16                 | 165             | 75%                  | 91%                              | 89%               | 95%                      |
+| claude-3-opus        | 37                 | 188             | 84%                  | 100%                             | 99%               | 96%                      |
+| claude-3.5-sonnet    | 14                 | 216             | 100%                 | 100%                             | 99%               | 96%                      |
+| gpt-3.5-turbo        | 7                  | 189             | 75%                  | 90%                              | 88%               | 95%                      |
+| gpt-4o-mini          | 9                  | 243             | 60%                  | 91%                              | 90%               | 96%                      |
+| gpt-4-0613           | 29                 | 180             | 70%                  | 98%                              | 92%               | 95%                      |
+| gpt-4-turbo          | 19                 | 209             | 86%                  | 99%                              | 99%               | 96%                      |
+| gpt-4o               | 11                 | 218             | 92%                  | 100%                             | 99%               | 96%                      |
+| o1-mini              | 25                 | 249             | 94%                  | 100%                             | 100%              | 96%                      |
+| o1-preview           | 37                 | 244             | 91%                  | 100%                             | 100%              | 96%                      |
+
+### Task 2: Bayesian Optimization
+
+| **Model Name**       | **Avg Time (sec)** | **Code Length** | **Code Correctness** | **Correctness (with Reflection)** | **Code Accuracy** |
+|----------------------|--------------------|-----------------|----------------------|----------------------------------|-------------------|
+| llama-3              | 28                 | 476             | 1%                   | 9%                               | 8%                |
+| llama-3.1            | 22                 | 471             | 6%                   | 16%                              | 15%               |
+| claude-3-sonnet      | 22                 | 514             | 0%                   | 18%                              | 14%               |
+| claude-3-opus        | 39                 | 424             | 18%                  | 60%                              | 56%               |
+| claude-3.5-sonnet    | 15                 | 450             | 5%                   | 48%                              | 41%               |
+| gpt-3.5-turbo        | 8                  | 322             | 20%                  | 52%                              | 34%               |
+| gpt-4o-mini          | 12                 | 560             | 5%                   | 27%                              | 27%               |
+| gpt-4-0613           | 33                 | 419             | 18%                  | 42%                              | 30%               |
+| gpt-4-turbo          | 30                 | 468             | 26%                  | 66%                              | 64%               |
+| gpt-4o               | 16                 | 548             | 43%                  | 79%                              | 75%               |
+| o1-mini              | 23                 | 764             | 35%                  | 75%                              | 74%               |
+| o1-preview           | 66                 | 661             | 50%                  | 90%                              | 85%               |
+
+### Task 3: EDBO Optimization
+
+| **Model Name**       | **Avg Time (sec)** | **Code Length** | **Code Correctness** | **Correctness (with Reflection)** | **Code Accuracy** |
+|----------------------|--------------------|-----------------|----------------------|----------------------------------|-------------------|
+| llama-3              | 10                 | 121             | 90%                  | 90%                              | 76%               |
+| llama-3.1            | 9                  | 105             | 98%                  | 98%                              | 98%               |
+| claude-3-sonnet      | 12                 | 176             | 95%                  | 95%                              | 94%               |
+| claude-3-opus        | 26                 | 219             | 90%                  | 98%                              | 94%               |
+| claude-3.5-sonnet    | 11                 | 336             | 98%                  | 99%                              | 99%               |
+| gpt-3.5-turbo        | 6                  | 205             | 28%                  | 54%                              | 52%               |
+| gpt-4o-mini          | 6                  | 271             | 80%                  | 81%                              | 81%               |
+| gpt-4-0613           | 25                 | 249             | 80%                  | 94%                              | 92%               |
+| gpt-4-turbo          | 30                 | 374             | 76%                  | 96%                              | 94%               |
+| gpt-4o               | 11                 | 368             | 92%                  | 98%                              | 94%               |
+| o1-mini              | 25                 | 358             | 79%                  | 98%                              | 98%               |
+| o1-preview           | 36                 | 285             | 91%                  | 100%                             | 99%               |
+
+
+
+
 ## Requirements
 
 ### Python Libraries
