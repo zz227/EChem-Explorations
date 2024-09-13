@@ -45,7 +45,7 @@ This folder contains the final datasets and results generated during this study.
 
 ## Evaluation Summary
 
-In this study, 12 large language models were tasked with chemistry-related tasks. Each model was tasked for 100 times repeatly. All generated code and their evaluations can be found in **SF3. Auto Coding Dataset.xlsx**.
+In this study, 12 large language models were tasked with chemistry-related tasks. Each model was tasked for 100 times repeatly to calculate the code excecutablity score and average code accuracy. All generated code and their evaluations can be found in **SF3. Auto Coding Dataset.xlsx**.
 Below is a summary of three representative tasks:
 
 - **Task 1: Reactivity Prediction** – Implemented ML models for predicting chemical reactivity with sklearn.
